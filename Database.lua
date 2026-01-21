@@ -1,5 +1,5 @@
 return {
-    -- [Command Name] = "Raw GitHub Link to Script"
-    
-    -- Example 1: Main Hub (Replace with your actual links)
+    ["Idk"] = "https://raw.githubusercontent.com/User/Repo/main/scripts/fly.lua",
+    ["esp"] = "https://raw.githubusercontent.com/User/Repo/main/scripts/esp.lua",
     ["Hub"] = "https://raw.githubusercontent.com/FadhilAkbarC/ExecutorDatabase/main/scripts/Hub.lua"
+}
