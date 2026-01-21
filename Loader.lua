@@ -10,7 +10,7 @@
 -- CONFIGURATION
 -------------------------------
 -- REPLACE THIS URL WITH YOUR RAW GITHUB DATABASE LINK:
-local DATABASE_URL = "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/database.lua" 
+local DATABASE_URL = "https://raw.githubusercontent.com/FadhilAkbarC/ExecutorDatabase/main/Database.lua" 
 
 -------------------------------
 -- SERVICES
