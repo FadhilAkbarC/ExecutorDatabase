@@ -434,11 +434,6 @@ end
 
 function Logic:Start()
     local Remote = self:GetRemote()
-    if not Remote then 
-        warn("Cyber-Delta: Attack Remote Not Found!")
-        UI.Elements.Status.Text = "ERROR: REMOTE NOT FOUND"
-        return 
-    end
 
     -- THREAD: Physics (Movement & Scanning)
     Services.RunService.Heartbeat:Connect(function()
@@ -497,7 +492,9 @@ function Logic:Start()
         while true do
             if State.Enabled and State.Target then
                 -- Fire Remote
-                Remote:FireServer(State.Target.Id)
+                if Remote then
+                    Remote:FireServer(State.Target.Id)
+                end
             end
             -- Adjust speed here (0.001 is safe for most executors)
             task.wait(0.001) 
